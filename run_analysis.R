@@ -56,8 +56,7 @@ complete_data_mean_sd <-
 Final_data_set <-
         merge(complete_data_mean_sd,
               activity_labels,
-              by = 'Activity_Label',
-              all.x = T)
+              by = 'Activity_Label')
 
 
 #CREATING A SECOND DATA SET WITH THE AVERAGE OF EACH VARIABLE FOR EACH ACTIVITY AND EACH SUBJECT
