@@ -1,0 +1,23 @@
+# CODEBOOK
+
+## Created variable definition
+
+### Initial data
+"x_train", "y_train", "x_test", "y_test", subject_train and subject_test contain the data from the downloaded files.
+"features" contains the data column names for the x_train, or x_test (or the following x_tot) datasets.
+"activity_labels" contains table that links the class labels with their activity name (as included in the downloaded files)
+
+
+### Merged data
+"x_tot", "y_tot" and "subject_tot" merge the previous the training and test data sets for the following operations.
+"complete_data" contains a complete dataset including the three previous partial datasets in a single table (or dataset)
+
+### Operating with the data
+
+"logical_mean_data" is the logical vector separating those columns containind the words "mean" or "sd"
+"complete_data_mean_sd" makes use of the previos logical vector selecting only those columns frome the "complete_data" which contains "mean" or "sd"
+"Final_data_set" merges the previous subset of the "complete_data" set with the activity_labels table according the activity labels.
+
+### Final data set
+
+ New_data_set is the final independent tidy data set with the average of each variable for each activity and each subject asked for the project
